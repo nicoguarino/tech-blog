@@ -8,6 +8,10 @@ Post.belongsTo(User, {
     onDelete: 'SET NULL'
 });
 
+User.belongsToMany(Post, {
+    onDelete: 'SET NULL'
+});
+
 Comment.belongsTo(User, {
     onDelete: 'SET NULL'
 });
