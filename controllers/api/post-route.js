@@ -7,7 +7,7 @@ router.get('/', (req, res) => {
     Post.findAll({
         attributes: [
             'id',
-            'post_url',
+            'body',
             'title'
         ],
         include: [
@@ -39,7 +39,7 @@ router.get('/:id', (req, res) => {
         },
         attributes: [
             'id',
-            'post_url',
+            'body',
             'title'
         ],
         include: [
@@ -73,7 +73,7 @@ router.get('/:id', (req, res) => {
 router.post('/', withAuth, (req, res) => {
     Post.create({
         title: req.body.title,
-        post_url: req.body.post_url
+        body: req.body.body
     })
         .then(dbPostData => res.json(dbPostData))
         .catch(err => {

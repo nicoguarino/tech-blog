@@ -1,6 +1,6 @@
 const Post = require('./Post');
 const User = require('./User');
-const Comment = require('./Comment');
+const Comment = require('./Comments');
 
 User.hasMany(Post);
 
@@ -8,9 +8,9 @@ Post.belongsTo(User, {
     onDelete: 'SET NULL'
 });
 
-User.belongsToMany(Post, {
-    onDelete: 'SET NULL'
-});
+// User.belongsToMany(Post, {
+//     onDelete: 'SET NULL'
+// });
 
 Comment.belongsTo(User, {
     onDelete: 'SET NULL'
