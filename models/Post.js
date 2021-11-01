@@ -2,7 +2,29 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 class Post extends Model {
-
+    // static date() {
+    //     return Post.findOne({
+    //         where: {
+    //             id: body.post_id
+    //         },
+    //         attributes: [
+    //             'id',
+    //             'body',
+    //             'title',
+    //             'created_at',
+    //         ],
+    //         include: [
+    //             {
+    //                 model: models.Comment,
+    //                 attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
+    //                 include: {
+    //                     model: models.User,
+    //                     attributes: ['username']
+    //                 }
+    //             }
+    //         ]
+    //     });
+    // }
 }
 
 Post.init(
@@ -21,6 +43,13 @@ Post.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
+        user_id: {
+            type: DataTypes.INTEGER,
+            references: {
+                model: 'user',
+                key: 'id'
+            }
+        }
     },
     {
         sequelize,
