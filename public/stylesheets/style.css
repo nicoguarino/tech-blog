@@ -10,7 +10,7 @@ body, html {
 }
 
 main {
-    background-color: #42015cf7;
+    background-color: #9866acf7;
 }
 
 .card {
@@ -203,6 +203,10 @@ main {
   color: #8d2ba5
 }
 
+.edit-body {
+  color: rgb(64, 20, 75);
+}
+
 .comment-form {
     margin-top: 5%;
   }
@@ -235,8 +239,10 @@ footer {
     justify-content: center;
     padding: 1%;
     font-size: 110%;
-    background-color: #654f88f7;
+    background-color: #482248;
+    color: #dcbced;
     font-weight: bold;
     width: 100%;
     text-align: center
+    
   }
