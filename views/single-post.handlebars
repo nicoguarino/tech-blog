@@ -1,18 +1,27 @@
-{{> post-info post}}
+<article class="post">
+    <div class="title">
+        <h1>{{post.title}}</h1>
+        <h4>{{post.body}}</h4>
+    </div>
+    <div class="meta">
+        By {{post.user.email}} on 
+        {{post.created_at}}
+        |
+        <a href="/post/{{post.id}}">{{post.comments.length}} comment(s)</a>
+    </div>
+</article>
 
 {{#if loggedIn}}
 <form class="comment-form">
     <div>
         <textarea name="comment-body"></textarea>
     </div>
-
+{{> comments post.comments}}
     <div>
         <button type="submit">add comment</button>
     </div>
 </form>
 {{/if}}
-
-{{> comments post.comments}}
 
 {{#if loggedIn}}
 <script src="../stylesheets/javascript/comment.js"></script>
