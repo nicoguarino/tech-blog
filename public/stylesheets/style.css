@@ -10,7 +10,7 @@ body, html {
 }
 
 main {
-    background-color: #d6ffd6f7;
+    background-color: #42015cf7;
 }
 
 .card {
@@ -22,7 +22,7 @@ main {
   }
 
 .card-body {
-    background-color: #d6ffd6f7;
+    background-color: #794e75f7;
     margin: 2px
   }
 
@@ -56,11 +56,11 @@ a {
 }
 
 a:hover {
-  color: #3486eb;
+  color: #601f74;
 }
 
 button {
-  background-color: #225ca3;
+  background-color: #e3a7f5;
   border: 0;
   padding: 1%;
   color: white;
@@ -71,7 +71,7 @@ button {
 }
 
 button:hover {
-  background-color: #3486eb;
+  background-color: #601f74;
 }
 ol {
     list-style: none;
@@ -98,7 +98,7 @@ textarea, input {
 
 textarea:focus, input:focus {
   outline: none;
-  border: 1px solid #3486eb;
+  border: 1px solid #281930;
 }
 
 textarea {
@@ -129,12 +129,12 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 1%;
-    background-color: #230909;
+    background-color: #482248;
     height: 15vh;
   }
 
   header h1 {
-    background-color: #d6ffd6f7;
+    background-color: #7f388df7;
     width: fit-content;
     padding: 1vh;
     border-radius: 1vh;
@@ -143,11 +143,11 @@ header {
   }
 
   header h1 a {
-      color: #230909; 
+      color: #4b254f; 
   }
 
   header h1 a:hover {
-    color: #230909;
+    color: #3d0f3d;
     text-decoration: none;
     font-size: 110%;
     transition: .1s;
@@ -165,7 +165,7 @@ main {
   padding: 0;
   cursor: pointer;
   text-decoration: none;
-  color: #225ca3;
+  color: #9e40aa;
   font-size: 100%;
   font-weight: bold;
   transition: color .1s;
@@ -174,15 +174,15 @@ main {
 
 .btn-no-style:hover {
   background: none;
-  color: #3486eb;
+  color: #30132f;
 }
 
 .delete-post-btn {
-  background-color: #d41414;
+  background-color: #b714d4;
 }
 
 .delete-post-btn:hover {
-  background-color: #ff643d;
+  background-color: #521252;
 }
 
 .post {
@@ -200,7 +200,7 @@ main {
   display: block;
   margin: -1.5% 0 2% 0;
   margin-top: 1vh;
-  color: #230909
+  color: #8d2ba5
 }
 
 .comment-form {
@@ -223,7 +223,7 @@ main {
   }
 
   .edit-post a {
-    color: #230909
+    color: #551255
   }
   .edit-post-form input {
       width: 100%
@@ -235,7 +235,7 @@ footer {
     justify-content: center;
     padding: 1%;
     font-size: 110%;
-    background-color: #d6ffd6f7;
+    background-color: #654f88f7;
     font-weight: bold;
     width: 100%;
     text-align: center
