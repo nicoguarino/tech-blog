@@ -59,6 +59,11 @@ a:hover {
   color: #601f74;
 }
 
+
+.btn-createBtn {
+  background-color: #602382;
+}
+
 button {
   background-color: #e3a7f5;
   border: 0;
