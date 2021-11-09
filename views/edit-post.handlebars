@@ -23,10 +23,10 @@
 
 
     <form class="comment-form">
+        {{> comments post.comments}}
         <div>
             <textarea name="comment-body"></textarea>
         </div>
-        {{> comments post.comments}}
         <div>
             <button type="submit">add comment</button>
         </div>
