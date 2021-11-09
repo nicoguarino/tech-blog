@@ -17,7 +17,7 @@ Tech blog is a website blog designed around current coming out where users can p
 ## Getting Started <a name = "getting-started"></a>
 
 * [Git Hub Pull](https://github.com/nicoguarino/note-taker.git)
-* [Deployed Website](https://nicoguarino-note-taker.herokuapp.com/notes)
+* [Deployed Website](https://gentle-brushlands-46188.herokuapp.com/)
 
 ## Installation <a name = "installation"></a>
 
